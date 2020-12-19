@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Saturn</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="saturn.js"></script>
+	</head>
+	<body>
+		<div id="procedure"> 
+			<h1 id="instructions"> 
+				Oh no, the Gangstars stole all of Saturn's Rings! <br /> <span class='small'> Hurry, drag the Rocketship to each Gangstar <br /> to collect all of the rings for Saturn! </span> 
+			</h1>
+			<div id="scoreboard">
+				Scoreboard <br />
+				0 out of 7 rings collected
+			</div>
+			<div id="riddleBox">
+			
+			</div>
+		</div>
+		<div id="saturnanchor"> 
+		
+<!-- Retrieved information on how to drag elements at https://www.w3schools.com/tags/ev_ondragenter.asp -->
+			<div id="homeland" ondragenter="endSaturn();" ondragleave="homelandHide();">
+			
+			</div>
+			<div id="rocketship" draggable="true">
+				<img src="images/rocket.png" alt="Rocket">
+			</div>
+			<div id="stars">
+				<div id="star1"  ondragenter="dropStar1();" ondragover="riddle1();"> 
+					<img src="images/gangstar1.png" width="100px">
+				</div>
+				<div id="star2"  ondragenter="dropStar2();" ondragover="riddle2();"> 
+					<img src="images/gangstar2.png" width="110px">
+				</div>
+				<div id="star3" ondragenter="dropStar3();" ondragover="riddle3();"> 
+					<img src="images/gangstar1.png" width="80px">
+				</div>
+				<div id="star4" ondragenter="dropStar4();" ondragover="riddle4();"> 
+					<img src="images/gangstar2.png" width="90px">
+				</div>
+				<div id="star5" ondragenter="dropStar5();" ondragover="riddle5();">
+					<img src="images/gangstar1.png" width="100px" >
+				</div>
+				<div id="star6" ondragenter="dropStar6();" ondragover="riddle6();">
+					<img src="images/gangstar2.png"  width="80px">
+				</div>
+				<div id="star7" ondragenter="dropStar7();" ondragover="riddle7();">
+					<img src="images/gangstar1.png" width="80px">
+				</div>
+			</div>	
+			<div id="endSaturnGame"><h1> Congratulations! You have completed the game.<br /> Your score is </h1>
+			
+			</div>
+		</div>
+	</body>
+</html>

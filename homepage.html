@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> A Very Annoying Riddle Game	</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="homepage.js"></script>
+	</head>
+	<body>
+<!-- The sound was retrieved from http://soundbible.com/1234-Bomb.html which offers free sounds based on creative commons--> 
+	<div id="planets">
+		<div id="mercury" onclick="explodeMercury();" onmouseover="showMercury();"> 
+	        <img src="images/mercury.png" width="150px">
+		</div>
+		<div id="venus" onclick="explodeVenus();" onmouseover="showVenus();"> 
+	        <img src="images/venus.png" width="190px">
+		</div>
+		<div id="earth" onclick="explodeEarth();" onmouseover="showEarth();"> 
+	        <img src="images/earth.png" width="160px">
+		</div>
+		<div id="mars" onclick="explodeMars();" onmouseover="showMars();"> 
+	        <img src="images/mars.png" width="150px">
+		</div>
+		<div id="jupiter" onmouseover="showJupiter();" onclick="jupiter();">
+	        <a href="jupiter.php"><img src="images/jupiter.png" width="250px" > </a>
+		</div>
+		<div id="saturn" onmouseover="showSaturn();" onclick="saturn();">
+	        <a href="saturn.html"><img src="images/saturn.png"  width="170px"> </a>
+		</div>
+		<div id="uranus"  onclick="explodeUranus();" onmouseover="showUranus();">
+	        <img src="images/uranus.png" width="180px">
+		</div>
+		<div id="neptune" onclick="explodeNeptune();" onmouseover="showNeptune();">
+	        <img src="images/neptune.png" width="130px">
+		</div>
+		<div id="pluto">
+	        <a href="pluto.html"><img src="images/pluto1.png" width="150px" > </a>
+		</div>
+
+		<img src="images/hoverhint.png" id="hoverhint">
+	</div>
+	<div id="insults">  
+	    
+	</div>
+	<div id="form">
+	    <img src= "images/title.png" align="center" id="titleimage"> 
+	    
+<!-- The following line is partially referenced from https://stackoverflow.com/questions/683498/calling-javascript-from-a-html-form -->
+
+	    <form method="post" action="javascript:hideForm();">
+    	    <h1> 
+				SO, WHO ARE YOU?
+			</h1>
+    		Enter Your Name (Please...) <br />
+    		<input type="text" name="name" placeholder="Name" id="name" required> <br />
+    		Security Question: What is your most embarassing nickname? <br />
+    		<input type="text" name="nickname" placeholder="Nickname" id="nickname" required> <br />
+    		<input type="submit" name="submit" value="LET'S BEGIN" id="submit">
+		</form>
+	</div>
+	</body>
+</html>
